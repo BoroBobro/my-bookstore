@@ -5,11 +5,11 @@ import historyBooks from './data/history.json'
 
 const AllTheBooks = () => (
   <Container fluid className="my-5">
-    <Row>
+    <div className='row align-items-start'>
       {fantasyBooks.map((book) => (
-        <Col md={4} lg={3} key={book.asin} className="mb-4">
+        <Col md={4} lg={3} keys={book.asin} className="mb-4 px-3">
           <Card>
-            <Card.Img variant="top" src={book.img} alt={book.title} />
+            <Card.Img variant="top" src={book.img} style={{maxHeight:"200px;" }} alt={book.title} />
             <Card.Body>
               <Card.Title>{book.title}</Card.Title>
               <Card.Text>${book.price}</Card.Text>
@@ -17,11 +17,11 @@ const AllTheBooks = () => (
           </Card>
         </Col>
       ))}
-    </Row>
+    </div>
     <Row>
         {
             historyBooks.map((book) =>(
-                <Col md={4} lg={3} key={book.asin} className='mb-4'>
+                <Col md={4} lg={3} keys={book.asin} className='mb-4'>
                     <Card>
                         <Card.Img variant='top' src={book.img} alt={book.title}/>
                         <Card.Body>
