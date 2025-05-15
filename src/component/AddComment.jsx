@@ -18,11 +18,7 @@ class AddComment extends Component {
                         "Content-Type": "application/json",
                         Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODI1ZjEyMDFlYmU4MjAwMTUwOWYzMjEiLCJpYXQiOjE3NDczMTcwMjQsImV4cCI6MTc0ODUyNjYyNH0.B8ywPnstTniw0jdb0Ms-9sORQY382ZZrD71zE2hh3aY",
                     },
-                    body: JSON.stringify({
-                        comment: this.state.comment,
-                        rate: this.state.rate,
-                        elementId: this.props.asin,
-                    }),
+                    body: JSON.stringify(this.state),
                 }
             );
             if (!res.ok) throw new Error("Errore nell'invio del commento");
