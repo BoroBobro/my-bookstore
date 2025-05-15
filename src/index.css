@@ -72,3 +72,7 @@ img{
  height: 250px;
   object-fit: cover;
 }
+
+body{
+  background-color: rgb(154, 163, 141);
+}

@@ -1,6 +1,6 @@
 // import MyNav from './MyNav'
-// import MyFooter from './MyFooter'
-// import Welcome from './Welcome'
+import MyFooter from './MyFooter'
+import Welcome from './Welcome'
 // import AllTheBooks from './AllTheBooks'
 
 // function App() {
@@ -40,11 +40,16 @@
 
 import BookList from "./BookList";
 import fantasyBooks from "./data/fantasy.json"
+import MyNav from "./MyNav"
 
 function App(){
   return(
+    
     <div className="App">
+      <MyNav />
+      <Welcome />
       <BookList books={fantasyBooks}/>
+      <MyFooter />
     </div>
   )
 }
