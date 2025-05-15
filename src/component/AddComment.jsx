@@ -11,7 +11,7 @@ class AddComment extends Component {
         e.preventDefault();
         try {
             const res = await fetch(
-                "https://striveschool-api.herokuapp.com/api/comments/0316438960",
+                "https://striveschool-api.herokuapp.com/api/comments/",
                 {
                     method: "POST",
                     headers: {
