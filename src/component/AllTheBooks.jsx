@@ -1,7 +1,7 @@
 
 import { Card, Container, Row, Col } from 'react-bootstrap'
-import fantasyBooks from './data/fantasy.json'
-import historyBooks from './data/history.json'
+import fantasyBooks from '../data/fantasy.json'
+import historyBooks from '../data/history.json'
 
 const AllTheBooks = () => (
   <Container fluid className="my-5">

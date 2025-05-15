@@ -1,6 +1,6 @@
 // import MyNav from './MyNav'
-import MyFooter from './MyFooter'
-import Welcome from './Welcome'
+import MyFooter from './component/MyFooter'
+import Welcome from './component/Welcome'
 // import AllTheBooks from './AllTheBooks'
 
 // function App() {
@@ -38,9 +38,9 @@ import Welcome from './Welcome'
 
 // export default App;
 
-import BookList from "./BookList";
+import BookList from "./component/BookList";
 import fantasyBooks from "./data/fantasy.json"
-import MyNav from "./MyNav"
+import MyNav from "./component/MyNav"
 
 function App(){
   return(
