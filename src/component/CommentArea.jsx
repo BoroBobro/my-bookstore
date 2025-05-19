@@ -33,6 +33,14 @@ class CommentArea extends Component {
         this.fetchComments();
     }
 
+    componentDidUpdate(prevProps){
+        if(prevProps.asin !== this.props.asin){
+            this.setState({loading: true, error:null, comments: []},
+                this.fetchComments
+            );
+        }
+    }
+
     render() {
         return (
             <div style={{ margin: "10px" }}>
