@@ -1,4 +1,4 @@
-
+import React from 'react'
 import { Card, Container, Row, Col } from 'react-bootstrap'
 import fantasyBooks from '../data/fantasy.json'
 import historyBooks from '../data/history.json'

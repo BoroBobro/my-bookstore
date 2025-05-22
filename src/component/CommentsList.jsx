@@ -1,3 +1,5 @@
+import React from 'react'
+
 import SingleComment from "./SingleComment";
 
 const CommentsList = ({ comments }) => (
